@@ -3,12 +3,13 @@
 import os
 import sys
 import json
-
+# change this to your cenv path
+default_path = "/home/<your computer name>/././CENV/app/"
 def import_settings():
 	global settings 
 	global path_file
 
-	with open("/home/ashish/Desktop/CENV/app/config.json") as f:
+	with open(os.path.join(default_path,"config.json")) as f:
 		_settings = f.read()
 		settings = json.loads(_settings)
 
