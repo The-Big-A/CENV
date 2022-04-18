@@ -6,7 +6,7 @@ from app.application import *
 
 commands = sys.argv[1:]
 
-def check_commands(commands):
+def cli(commands):
 	count = 0
 	for command in commands:
 		count += 1
@@ -21,4 +21,4 @@ def check_commands(commands):
 		else:
 			pass
 
-check_commands(commands)
+cli(commands)
